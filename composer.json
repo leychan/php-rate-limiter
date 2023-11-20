@@ -1,0 +1,19 @@
+{
+    "name": "leychan/rate-limiter",
+    "description": "rate limiter power by php and redis",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Leychan\\RateLimiter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lei",
+            "email": "sanyue0315@outlook.com"
+        }
+    ],
+    "require": {
+      "ext-redis": "*"
+    }
+}
