@@ -12,7 +12,7 @@ $slideWindowOpt = (new SlideWindowOpt())->setWindowSize(100000)->setThreshold(5)
 for ($i = 0; $i < 20; $i++) {
     $rateLimiter = new RateLimiter(
         $redisClientOpt,
-        $slideWindowOpt->setMember(mt_rand(0, 9999))
+        $slideWindowOpt->setUniqueId($i)
     );
 
     var_dump($rateLimiter->check());
