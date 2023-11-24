@@ -3,10 +3,13 @@
 namespace Leychan\RateLimiter;
 
 class RedisClientOpt {
+    // redis host
     public $host;
 
+    // redis port
     public $port;
 
+    // redis password
     public $password;
 
     /**
